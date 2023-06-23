@@ -1,0 +1,91 @@
+/**styling reset**/
+.default_style_none{
+    all: unset;
+}
+
+/**button styling**/
+.dark_button{
+    border-style: none;
+    padding: 8px 16px 8px 16px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 2px;
+}
+
+.hover_cursor:hover{
+    cursor: pointer;
+}
+
+/**padding**/
+
+
+
+.fill{
+    width: 100%;
+}
+
+.input_fill{
+    border-radius: 2px;
+    border: 1px solid #E3E3E3;
+    background: #FFF;
+    width: 300px;
+    padding: 8px 16px;
+}
+
+.box_light_drop_shadow{
+    border-radius: 5px;
+    border: 2px solid #F0F0F0;
+    background: #FFF;
+    box-shadow: 4px 4px 11px 0px rgba(176, 222, 255, 0.12);
+}
+
+.text_center_align{
+    text-align: center;
+}
+
+.text_left_align{
+    text-align: left;
+}
+
+.padding_left_right_150px{
+    
+}
+
+.center_content_horizontal{
+    display: flex;
+    justify-content: center;
+}
+
+.center_content_middle_page{
+    top: 50%;
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 35%; /*fix this, to make vertically center*/
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.height_100percent{
+
+}
+
+
+
+
+
+
+/**padding**/
+.padding_32px{
+    padding: 32px;
+}
+
+.padding_16px{
+    padding: 16px;
+}
+
+.padding_8px{
+    padding: 8px;
+}
