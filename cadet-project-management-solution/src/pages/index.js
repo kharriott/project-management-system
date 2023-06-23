@@ -2,6 +2,7 @@
 import globalstyle from '../app/styles.css'
 import styles from '../app/styles.module.css'
 import style from '../app/styles.css'
+import { fetchAPI } from '@/app/api';
 import {useState} from "react";
 
 
@@ -12,6 +13,19 @@ export default function LogIn() {
   const [username, setUserName] = useState('');
   const [password, setPassword] = useState('');
 
+  async function fetchData() {
+    try {
+      const data = await fetchAPI('/users');
+      // Use the data returned from the API call
+      console.log(data);
+    } catch (error) {
+      // Handle any errors that occurred during the API call
+      console.error(error);
+    }
+  }
+  fetchData();
+
+  
   const handleUserNameChange = (event) => {
     setUserName(event.target.value);
   }
