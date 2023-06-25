@@ -6,7 +6,7 @@ import styles from '../app/styles.module.css'
 
 export function Projectview() {
   return (
-    <div>
+    <div className={``}>
         {/* <DefaultNavBar></DefaultNavBar> */}
         {/* <SignedInNavBar></SignedInNavBar>
         <p>Dashboard</p>
@@ -29,7 +29,7 @@ export function Projectview() {
                     </div>
               </div>
             </div>
-            <div className={`${styles.project_summary} ${styles.box_shadow_light} ${styles.border_radius_5px} ${styles.padding_16px}`}>
+            <div className={`${styles.project_summary} ${styles.box_shadow_light} ${styles.border_radius_5px} ${styles.background_color_white} ${styles.padding_16px}`}>
               <div className={``}>
                 <div className={`${styles.display_inline}`}>
                   <h2 className={`${styles.link_blue} ${styles.padding_top_8px}`}>Project Summary</h2>
@@ -62,14 +62,14 @@ export function Projectview() {
               <div className={`${styles.padding_8px}`}></div>
               <div className={`${styles.gap}`}>
                 <div className={`${styles.display_inline_block}`}>
-                <div className={`${styles.team_member_small} ${styles.light_outline}`}>
+                <div className={`${styles.team_member_small} ${styles.light_outline} ${styles.background_color_white}`}>
                   <img src={'/team_member_sample_one.png'}></img>
                   <p className={`${styles.link_blue} ${styles.padding_top_14px}`}>Amy Whineloft</p>
                 </div>
                 </div>
                 <div className={`${styles.padding_4px} ${styles.display_inline_block}`}></div>
                 <div className={`${styles.display_inline_block}`}>
-                  <div className={`${styles.team_member_small} ${styles.light_outline}`}>
+                  <div className={`${styles.team_member_small} ${styles.light_outline} ${styles.background_color_white}`}>
                     <img src={'/team_member_sample_one.png'}></img>
                     <p className={`${styles.link_blue} ${styles.padding_top_14px}`}>Marcus Gray</p>
                   </div>
@@ -77,7 +77,7 @@ export function Projectview() {
               </div>
               
             </div>
-            <div className={`${styles.project_update} ${styles.box_shadow_lighter} ${styles.border_radius_5px} ${styles.padding_16px}`}>
+            <div className={`${styles.project_update} ${styles.box_shadow_lighter} ${styles.background_color_white} ${styles.border_radius_5px} ${styles.padding_16px}`}>
               <div className={`${styles.display_inline}`}>
                 <h2 className={`${styles.link_blue} ${styles.padding_top_4px}`}>Updates</h2>
                 <div className={`${styles.justify_right}`}>
