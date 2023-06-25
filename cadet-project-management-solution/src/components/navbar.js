@@ -5,6 +5,14 @@ import style from '../app/styles.css'
 import { fetchAPI } from '@/app/api';
 import {useState} from "react";
 
+export function SideBar() {
+  return (
+    <div>
+      <p>side bar</p>
+    </div>
+  )
+}
+
 export function DefaultNavBar() {
 
   return (

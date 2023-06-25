@@ -172,6 +172,19 @@
     gap: 32px;
 }
 
+.dashboard_layout{
+    display: grid;
+    grid-template-columns: 'sidebar content';
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.content{
+    grid-area: project_view;
+}
+
 .project_title{
     grid-area: title;
 }
