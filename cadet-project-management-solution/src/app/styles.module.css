@@ -36,6 +36,14 @@
     cursor: pointer;
 }
 
+.link_dark_blue{
+    color: #264F7E;
+}
+
+.link_dark_blue:hover{
+    cursor: pointer;
+}
+
 /**alignment**/
 .text_center_align{
     text-align: center;
@@ -67,6 +75,22 @@
     padding-top: 2px;
 }
 
+.padding_top_16px{
+    padding-top: 16px;
+}
+
+.padding_top_14px{
+    padding-top: 14px;
+}
+
+.padding_top_8px{
+    padding-top: 8px;
+}
+
+.padding_top_4px{
+    padding-top: 4px;
+}
+
 .padding_top_bottom_32px{
     padding: 32px 0px 32px 0px;
 }
@@ -88,7 +112,29 @@
     padding: 8px 16px 8px 16px;
 }
 
+.tag_software_development{
+    border-radius: 50px;
+    background: #51AABE;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    max-width: fit-content;
+    padding: 8px 16px 8px 16px;
+}
 
+
+
+.tag_project_management{
+    border-radius: 50px;
+    background: #5A51BE;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    max-width: fit-content;
+    padding: 8px 16px 8px 16px;
+}
 
 /**radius**/
 .border_radius_5px{
@@ -205,8 +251,11 @@
 
 .display_inline{
     display: flex;
-    justify-content: right;
     gap: 8px;
+}
+
+.justify_right{
+    justify-content: right;
 }
 
 .small_round_button{
@@ -222,8 +271,36 @@
     height: 20px;
 }
 
+.light_outline{
+    border: 1px solid #E2E2E2;
+}
 
+.team_member_small{
+    display: flex;
+    border-radius: 2px;
+    padding: 8px;
+    gap: 12px;
+}
 
+.team_member_small img{
+    width: 42px;
+    height: 42px;
+    border-radius: 50px;
+}
 
+.team_member_small p{
+    font-weight: bold;
+}
 
+.display_inline_block{
+    display: inline-block;
+}
+
+.gap_8px{
+    gap: 8px;
+}
+
+.gap_4px{
+    gap: 4px;
+}
 
