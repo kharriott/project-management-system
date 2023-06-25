@@ -18,6 +18,11 @@
     cursor: pointer;
 }
 
+/**font_style**/
+.underline{
+    text-decoration-line: underline;
+}
+
 /**links**/
 .link:hover{
     cursor: pointer;
@@ -25,7 +30,6 @@
 
 .link_blue{
     color: #296DBD;
-    text-decoration-line: underline;
 }
 
 .link_blue:hover{
@@ -55,6 +59,14 @@
     padding: 8px;
 }
 
+.padding_4px{
+    padding: 4px;
+}
+
+.padding_top_2px{
+    padding-top: 2px;
+}
+
 .padding_top_bottom_32px{
     padding: 32px 0px 32px 0px;
 }
@@ -64,10 +76,67 @@
 }
 
 
+/**tag**/
+.tag_active{
+    border-radius: 50px;
+    background: #39D36E;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    max-width: fit-content;
+    padding: 8px 16px 8px 16px;
+}
+
+
+
+/**radius**/
+.border_radius_5px{
+    border-radius: 5px;
+}
+
+
+.dashboard_content{
+    margin: 40px 40px 40px 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /***Unsorted***/
 
+.grid_project_view{
+    display: grid;
+    grid-template-areas:'title      title'
+                        'update     summary'
+                        'update     summary'
+                        'team       summary';
+    gap: 32px;
+}
 
+.project_title{
+    grid-area: title;
+}
+
+.project_summary{
+    grid-area: summary;
+}
+
+.project_team{
+    grid-area: team;
+}
+
+.project_update{
+    grid-area: update;
+}
 
 
 .fill{
@@ -84,6 +153,10 @@
 
 .box_shadow_light{
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.17);
+}
+
+.box_shadow_lighter{
+    box-shadow: 3px 4px 9px 0px rgba(0, 0, 0, 0.13);
 }
 
 .box_light_drop_shadow{
@@ -111,6 +184,43 @@
 
 }
 
+/**specific**/
+.update_card_top{
+    border-radius: 5px 5px 0px 0px;
+    border: 1px solid #C9C9C9;
+    padding: 8px;
+}
+
+.update_card_bottom{
+    margin-top: -2px;
+    border-radius: 0px 0px 5px 5px;
+    border: 1px solid #C9C9C9;
+    padding: 8px;
+    background: #F3F3F3;
+}
+
+.paragraph_light{
+    color: #424242;
+}
+
+.display_inline{
+    display: flex;
+    justify-content: right;
+    gap: 8px;
+}
+
+.small_round_button{
+    border-radius: 50px;
+    border: 1px solid #CECECE;
+    background: #FFF;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+
+.small_icon{
+    width: 20px;
+    height: 20px;
+}
 
 
 
