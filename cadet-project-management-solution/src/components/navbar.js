@@ -7,8 +7,29 @@ import {useState} from "react";
 
 export function SideBar() {
   return (
-    <div>
-      <p>side bar</p>
+    <div className={`${styles.padding_32px}`}>
+      <div>
+        <img src={'/logo.png'}></img>
+      </div>
+      <div className={`${styles.padding_16px}`}></div>
+      <div className={`${styles.side_bar_nav_link} ${styles.side_bar_nav_link_active} ${styles.display_inline}`}>
+        <img className={`${styles.dashboard_icon} ${styles.change_fill_color}`} src={'/project_icon.svg'} alt="icon"></img>
+        {/* <svg className={`${styles.dashboard_icon} ${styles.change_fill_color}`} src={'/project_icon.svg'} alt="icon"></svg> */}
+        {/* <div className={`${styles.change_fill_color}`} >
+          <svg className={`${styles.dashboard_icon} ${styles.change_fill_color}`} src={'/project_icon.svg'} alt="icon"></svg>
+        </div>
+        <object className={`${styles.dashboard_icon} ${styles.change_fill_color}`} data={'/project_icon.svg'} type="image/svg+xml" alt="SVG Image"></object> */}
+        <div className={`${styles.padding_top_4px}`}>
+          <p className={`${styles.bold}`}>Projects</p>
+        </div>
+      </div>
+      <div className={`${styles.padding_16px}`}></div>
+      <div className={`${styles.side_bar_nav_link} ${styles.display_inline}`}>
+        <img className={`${styles.dashboard_icon} ${styles.change_fill_color}`} src={'/workers_icon.svg'} alt="icon"></img>
+        <div className={`${styles.padding_top_4px}`}>
+          <p className={`${styles.bold}`}>Workers</p>
+        </div>
+      </div>
     </div>
   )
 }

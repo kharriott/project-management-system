@@ -174,15 +174,43 @@
 
 .dashboard_layout{
     display: grid;
-    grid-template-columns: 'sidebar content';
+    grid-template-areas: 'sidebar content'
+                         'sidebar content';
 }
 
 .sidebar{
     grid-area: sidebar;
 }
 
+.side_bar_nav_link p{
+    padding-top: 4px;
+}
+
+.side_bar_nav_link_active{
+
+
+}
+.filter_green{
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
+
+/* .svg > g > path:nth-child(1){
+    fill: red;
+    background-color: red;
+  
+    
+    color: red;
+    
+    color: red !important;
+} */
+
+.test{
+    color: red;
+    fill: red;
+    background-color: red;
+}
 .content{
-    grid-area: project_view;
+    grid-area: content;
 }
 
 .project_title{
@@ -321,3 +349,7 @@
     gap: 4px;
 }
 
+.dashboard_icon{
+    width: 32px;
+    height: 32px;
+}
