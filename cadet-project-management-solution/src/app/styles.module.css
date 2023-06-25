@@ -44,6 +44,10 @@
     cursor: pointer;
 }
 
+.bold{
+    font-weight: bold;
+}
+
 /**alignment**/
 .text_center_align{
     text-align: center;

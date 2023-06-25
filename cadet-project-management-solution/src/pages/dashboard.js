@@ -29,17 +29,32 @@ export default function Dashboard() {
                     </div>
               </div>
             </div>
-            <div className={`${styles.project_summary}`}>
-              <div>
-                <div>
-                  <h3>Project Summary</h3>
-                  <p>Edit</p>
+            <div className={`${styles.project_summary} ${styles.box_shadow_light} ${styles.border_radius_5px} ${styles.padding_16px}`}>
+              <div className={``}>
+                <div className={`${styles.display_inline}`}>
+                  <h3 className={`${styles.link_blue} ${styles.padding_top_8px}`}>Project Summary</h3>
+                  <div className={`${styles.small_round_button} ${styles.display_inline}`}>
+                      <img src={'/edit_icon.png'} className={`${styles.small_icon}`}></img>
+                      <p className={`${styles.padding_top_2px}`}>Edit</p>
+                  </div>
                 </div>
-                <p>Project By Amy Whineesloft</p>
-                <p>Start Date January 16th 2023</p>
-                <p>Budget $300,000.00</p>
-                <p>Additional Details</p>
-                <p>Lorem impsum.</p>
+                <div className={`${styles.padding_8px}`}></div>
+                <div className={`${styles.display_inline}`}>
+                  <p className={`${styles.bold}`}>Posted By</p><p className={`${styles.paragraph_light}`}>Amy Whineloft</p>
+                </div>
+                <div className={`${styles.padding_4px}`}></div>
+                <div className={`${styles.display_inline}`}>
+                  <p className={`${styles.bold}`}>Start Date</p><p className={`${styles.paragraph_light}`}>January 16th, 2023</p>
+                </div>
+                <div className={`${styles.padding_4px}`}></div>
+                <div className={`${styles.display_inline}`}>
+                  <p className={`${styles.bold}`}>Budget</p><p className={`${styles.paragraph_light}`}>$300,000.00 JMD</p>
+                </div>
+                <div className={`${styles.padding_8px}`}></div>
+                <div className={`${styles.padding_4px}`}></div>
+                <p className={`${styles.bold}`}>Additional Details</p>
+                <div className={`${styles.padding_4px}`}></div>
+                <p className={`${styles.paragraph_light}`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper quam nibh, eu tincidunt turpis vulputate ut. Pellentesque accumsan pellentesque arcu, ut ullamcorper ante blandit ut. Donec feugiat faucibus felis placerat venenatis. Nullam porttitor maximus est, mattis ullamcorper leo maximus sit amet. Duis laoreet, lacus eget facilisis tincidunt, nunc diam sodales massa, sit amet condimentum nunc mi quis metus. Sed fermentum condimentum erat, non bibendum lorem placerat in. Aenean elementum est iaculis, vestibulum nulla ut, interdum ligula. Suspendisse potenti. Nam fermentum lobortis tortor vitae cursus. Aenean egestas metus eget ante sagittis varius. Aenean viverra libero eget ligula efficitur, eget vehicula erat facilisis. Ut vel condimentum tortor, quis lobortis dui. Vestibulum ornare tellus ac libero dapibus, volutpat gravida felis euismod. Nam feugiat dignissim blandit.</p>
               </div>
             </div>
             <div className={`${styles.project_team}`}>
