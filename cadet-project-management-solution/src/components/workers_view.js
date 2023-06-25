@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link';
+import { DefaultNavBar, SignedInNavBar } from '@/components/navbar';
 //import style from '../app/styles.css'
 import styles from '../app/styles.module.css'
 

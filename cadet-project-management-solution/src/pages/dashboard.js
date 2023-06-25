@@ -5,6 +5,8 @@ import { SideBar, DefaultNavBar, SignedInNavBar } from '@/components/navbar';
 import {Projectview} from '@/components/project_view' 
 import styles from '../app/styles.module.css'
 
+
+
 export default function Dashboard() {
   return (
     <div className={`${styles.dashboard_layout}`}>

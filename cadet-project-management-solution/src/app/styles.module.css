@@ -182,6 +182,10 @@
     grid-area: sidebar;
 }
 
+.side_bar_nav_link{
+    cursor: pointer;
+}
+
 .side_bar_nav_link p{
     padding-top: 4px;
 }
