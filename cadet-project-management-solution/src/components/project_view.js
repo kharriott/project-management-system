@@ -32,7 +32,7 @@ export function Projectview() {
             <div className={`${styles.project_summary} ${styles.box_shadow_light} ${styles.border_radius_5px} ${styles.background_color_white} ${styles.padding_16px}`}>
               <div className={``}>
                 <div className={`${styles.display_inline}`}>
-                  <h2 className={`${styles.link_blue} ${styles.padding_top_8px}`}>Project Summary</h2>
+                  <h2 className={`${styles.link_blue} ${styles.padding_top_4px}`}>Project Summary</h2>
                   <div className={`${styles.small_round_button} ${styles.display_inline}`}>
                       <img src={'/edit_icon.png'} className={`${styles.small_icon}`}></img>
                       <p className={`${styles.padding_top_2px}`}>Edit</p>
