@@ -13,17 +13,17 @@ export default function LogIn() {
   const [username, setUserName] = useState('');
   const [password, setPassword] = useState('');
 
-  async function fetchData() {
-    try {
-      const data = await fetchAPI('/users');
-      // Use the data returned from the API call
-      console.log(data);
-    } catch (error) {
-      // Handle any errors that occurred during the API call
-      console.error(error);
-    }
-  }
-  fetchData();
+  // async function fetchData() {
+  //   try {
+  //     const data = await fetchAPI('/users');
+  //     // Use the data returned from the API call
+  //     console.log(data);
+  //   } catch (error) {
+  //     // Handle any errors that occurred during the API call
+  //     console.error(error);
+  //   }
+  // }
+  // fetchData();
 
   
   const handleUserNameChange = (event) => {
@@ -47,6 +47,10 @@ export default function LogIn() {
     //history.push('/dashboard');
     window.location.href = '/dashboard';
 
+  }
+
+  const handleAnonBrowsing = () => {
+    window.location.href = '/dashboard';
   }
 
   
@@ -73,6 +77,10 @@ export default function LogIn() {
                 </div>
               </form>
             </div>
+            <div className={`${styles.padding_16px}`}></div>
+            <div className={`${styles.text_center_align}`}>
+              <a className={`${styles.link_blue}`} onClick={handleAnonBrowsing}>Browse as anonymous.</a>
+            </div>    
           </div>
       </div>
     </div>

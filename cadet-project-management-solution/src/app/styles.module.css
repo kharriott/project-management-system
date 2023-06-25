@@ -18,7 +18,55 @@
     cursor: pointer;
 }
 
+/**links**/
+.link:hover{
+    cursor: pointer;
+}
+
+.link_blue{
+    color: #296DBD;
+    text-decoration-line: underline;
+}
+
+.link_blue:hover{
+    cursor: pointer;
+}
+
+/**alignment**/
+.text_center_align{
+    text-align: center;
+}
+
+.text_left_align{
+    text-align: left;
+}
+
+
 /**padding**/
+.padding_32px{
+    padding: 32px;
+}
+
+.padding_16px{
+    padding: 16px;
+}
+
+.padding_8px{
+    padding: 8px;
+}
+
+.padding_top_bottom_32px{
+    padding: 32px 0px 32px 0px;
+}
+
+.padding_top_bottom_16px{
+    padding: 16px 0px 16px 0px;
+}
+
+
+
+/***Unsorted***/
+
 
 
 
@@ -34,23 +82,15 @@
     padding: 8px 16px;
 }
 
+.box_shadow_light{
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.17);
+}
+
 .box_light_drop_shadow{
     border-radius: 5px;
     border: 2px solid #F0F0F0;
     background: #FFF;
     box-shadow: 4px 4px 11px 0px rgba(176, 222, 255, 0.12);
-}
-
-.text_center_align{
-    text-align: center;
-}
-
-.text_left_align{
-    text-align: left;
-}
-
-.padding_left_right_150px{
-    
 }
 
 .center_content_horizontal{
@@ -60,7 +100,6 @@
 
 .center_content_middle_page{
     top: 50%;
-    position: absolute;
     position: absolute;
     top: 50%;
     left: 35%; /*fix this, to make vertically center*/
@@ -77,15 +116,4 @@
 
 
 
-/**padding**/
-.padding_32px{
-    padding: 32px;
-}
 
-.padding_16px{
-    padding: 16px;
-}
-
-.padding_8px{
-    padding: 8px;
-}
