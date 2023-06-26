@@ -5,9 +5,8 @@ import style from '../app/styles.css'
 import { fetchAPI } from '@/app/api';
 import {useState} from "react";
 
-export function SideBar() {
-
-
+export function SideBar(view_name) {
+  console.log(view_name)
   function nav_bar_link_clicked(link) {
     
   }

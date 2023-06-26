@@ -153,8 +153,10 @@
 
 
 
-
-
+/* 
+.max_width_400px{
+    width: 250px;
+} */
 
 
 
@@ -174,12 +176,13 @@
 
 .dashboard_layout{
     display: grid;
-    grid-template-areas: 'sidebar content'
-                         'sidebar content';
+    grid-template-areas: 'sidebar content content content content content'
+                         'sidebar content content content content content';
 }
 
 .sidebar{
     grid-area: sidebar;
+    
 }
 
 .side_bar_nav_link{
