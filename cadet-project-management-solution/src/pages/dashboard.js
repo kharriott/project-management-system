@@ -1,7 +1,3 @@
-import Image from 'next/image'
-import Link from 'next/link';
-import { SideBar, DefaultNavBar, SignedInNavBar } from '@/components/navbar';
-//import style from '../app/styles.css'
 import {Projectview} from '@/components/project_view' 
 import { Workerview } from '@/components/workers_view';
 import styles from '../app/styles.module.css'
@@ -11,11 +7,7 @@ import { useState, useEffect } from 'react';
 
 export default function Dashboard() {
   const [content, setContent] = useState("projects_tab")
-  //var content = "project-view"
-
-  // function change_content(view_name) {
-  //     setContent(view_name)
-  // }
+  
   async function nav_bar_link_clicked(link) {
     setContent(link)
     console.log(link)
@@ -24,8 +16,7 @@ export default function Dashboard() {
 
   return (
     <div className={`${styles.dashboard_layout}`}>
-        {/* <SideBar view_name={yourVariable} className={`${styles.sidebar}`}></SideBar> */}
-        <div className={``}>
+        <div className={`${styles.width_300px}`}>
           <div className={`${styles.sidebar}`}>
                 <div className={`${styles.padding_32px}`}>
               <div>

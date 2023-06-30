@@ -176,8 +176,10 @@
 
 .dashboard_layout{
     display: grid;
-    grid-template-areas: 'sidebar content content content content content'
-                         'sidebar content content content content content';
+    /* grid-template-areas: 'sidebar content content'; */
+    grid-template-columns: max-content 1fr 1fr; /* Specify the column widths as desired */
+    grid-template-areas: 'sidebar content content';
+
 }
 
 .sidebar{
@@ -212,16 +214,6 @@
     filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
 }
 
-/* .svg > g > path:nth-child(1){
-    fill: red;
-    background-color: red;
-  
-    
-    color: red;
-    
-    color: red !important;
-} */
-
 .test{
     color: red;
     fill: red;
@@ -229,6 +221,10 @@
 }
 .content{
     grid-area: content;
+    position: relative;
+    background-color: #F2F8FF;
+    height: 100vh;
+
 }
 
 .project_title{
@@ -372,11 +368,6 @@
     height: 32px;
 }
 
-.content{
-    background-color: #F2F8FF;
-    height: 100vh;
-    /* width: 100vw; */
-}
 
 .background_color_white{
     background-color: white;
