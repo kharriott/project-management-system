@@ -1,4 +1,5 @@
 import {Projectview} from '@/components/project_view' 
+import { ProjectsListView } from '@/components/projects_lists_view';
 import { Workerview } from '@/components/workers_view';
 import styles from '../app/styles.module.css'
 import { useState, useEffect } from 'react';
@@ -8,7 +9,7 @@ import { useState, useEffect } from 'react';
 export default function Dashboard() {
   const [content, setContent] = useState("projects_tab")
   const [active, setIsActive] = useState(true);
-  const [isProjectsActive, setIsProjectsActive] = useState(false);
+  const [isProjectsActive, setIsProjectsActive] = useState(true);
   const [isWorkersActive, setIsWorkersActive] = useState(false);
   
   
@@ -40,21 +41,15 @@ export default function Dashboard() {
     clickedNavLink.classList.add(`${styles.side_bar_nav_link_active}`);
     clickedNavLink.classList.remove(`${styles.side_bar_nav_link_inactive}`)
     if (link === "projects_tab"){
-      setIsProjectsActive(false)
+      setIsProjectsActive(true)
+      setIsWorkersActive(false)
 
     }
     if (link === "work_tab"){
-      setIsWorkersActive(false)
+      setIsWorkersActive(true)
+      setIsProjectsActive(false)
     }
 
-    
-
-    // const navLinks = document.querySelectorAll(`.${styles.inactive}`);
-    // navLinks.forEach((navLink) => {
-    //   navLink.classList.remove('active');
-    // });
-    // const clickedNavLink = document.querySelector(`.${styles.side_bar_nav_link}[data-link="${link}"]`);
-    // clickedNavLink.classList.add('active');
 
   }
 
@@ -66,6 +61,13 @@ export default function Dashboard() {
               <div>
                 <img src={'/logo.png'}></img>
               </div>
+              {/* <div className={`${styles.padding_16px}`}></div>
+              <div onClick={() => nav_bar_link_clicked("projects_tab")} id="projects_tab" className={`${styles.side_bar_nav_link} ${styles.side_bar_nav_link_active} ${styles.display_inline}`}>
+                <img className={`${styles.dashboard_icon} ${styles.change_fill_color}`} src={ isProjectsActive ? '/project_icon_active.svg' : '/project_icon_inactive.svg'} alt="icon"></img>
+                <div className={`${styles.padding_top_4px}`}>
+                  <p className={`${styles.bold}`}>Projects List</p>
+                </div>
+              </div> */}
               <div className={`${styles.padding_16px}`}></div>
               <div onClick={() => nav_bar_link_clicked("projects_tab")} id="projects_tab" className={`${styles.side_bar_nav_link} ${styles.side_bar_nav_link_active} ${styles.display_inline}`}>
                 <img className={`${styles.dashboard_icon} ${styles.change_fill_color}`} src={ isProjectsActive ? '/project_icon_active.svg' : '/project_icon_inactive.svg'} alt="icon"></img>
@@ -75,7 +77,7 @@ export default function Dashboard() {
               </div>
               <div className={`${styles.padding_16px}`}></div>
               <div onClick={() => nav_bar_link_clicked("work_tab")} id="work_tab"className={`${styles.side_bar_nav_link} ${styles.side_bar_nav_link_inactive} ${styles.display_inline}`}>
-                <img className={`${styles.dashboard_icon} ${styles.change_fill_color}`}  src={ isWorkersActive ? '/workers_icon_inactive.svg' : '/workers_icon_active.svg'} alt="icon"></img>
+                <img className={`${styles.dashboard_icon} ${styles.change_fill_color}`}  src={ isWorkersActive ? '/workers_icon_active.svg' : '/workers_icon_inactive.svg'} alt="icon"></img>
                 <div className={`${styles.padding_top_4px}`}>
                   <p className={`${styles.bold}`}>Workers</p>
                 </div>
@@ -86,7 +88,7 @@ export default function Dashboard() {
         
         <div className={`${styles.content}`}>
           { (content === "projects_tab") ?
-            (<Projectview></Projectview>) : null
+            (<ProjectsListView></ProjectsListView>) : null
           }
           { (content === "work_tab") ?
             (<Workerview></Workerview>) : null

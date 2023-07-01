@@ -29,6 +29,8 @@ app.get('/', (request, response) => {
 })
 
 app.get('/users', db.getUsers)
+app.get('/projects', db.getProjects)
+app.get('/users/:id', db.getUserById)
 
 
 
